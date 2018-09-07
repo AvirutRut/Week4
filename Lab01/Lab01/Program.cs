@@ -5,14 +5,12 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            int n = 123456789;
-            Console.WriteLine("{0, 0:E}", n);
-            Console.WriteLine("{0, 0:F}", n);
-            Console.WriteLine("{0, 0:G}", n);
-            Console.WriteLine("{0, 0:N}", n);
-            Console.WriteLine("{0, 0:P}", n);
-            Console.WriteLine("{0, 0:X}", n);
-
+            const double i = 123.456789d;
+            Console.WriteLine("{0:F1}", i);
+            Console.WriteLine("{0:F2}", i);
+            Console.WriteLine("{0:F3}", i);
+            Console.WriteLine("{0:F4}", i);
+            Console.WriteLine("{0:F5}", i);
         }
     }
 }
