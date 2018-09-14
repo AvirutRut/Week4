@@ -5,10 +5,19 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            char ch;
-            Console.WriteLine("Press a key followed by ENTER");
-            ch = (char)Console.Read(); // get a char
-            Console.WriteLine("Your key is " + ch);
+            try
+            {
+                Console.Write("Name :");
+                int val1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Lastname :");
+                int val2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Answer = " + (val1 + val2));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error : " + e.ToString());
+            }
+
         }
     }
 }
