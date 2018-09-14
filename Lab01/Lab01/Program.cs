@@ -5,10 +5,10 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            char ch;
-            Console.WriteLine("Press a key followed by ENTER");
-            ch = (char)Console.Read(); // get a char
-            Console.WriteLine("Your key is " + ch);
+            string str;
+            Console.WriteLine("Enter some characters.");
+            str = Console.Read();
+            Console.WriteLine("You entered" + str);
         }
     }
 }
