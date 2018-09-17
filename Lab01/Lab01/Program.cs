@@ -5,16 +5,22 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            string n, s;
-            double id, gpa;
-            Console.WriteLine("Name");
-            n = Console.ReadLine().ToString().ToUpper();
-            Console.WriteLine("Last Name :");
-            s = Console.ReadLine().ToString().ToUpper();
-            Console.WriteLine("ID :");
-            id = double.Parse(Console.ReadLine());
-            Console.WriteLine("GPA :");
-            gpa = double.Parse(Console.ReadLine());
+            bool A, B, Y;
+            Console.WriteLine("      Y = A AND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+
         }
     }
 }
